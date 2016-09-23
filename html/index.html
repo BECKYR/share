@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>share</title>
+    <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+    <link href="../css/font/iconfont.css" type="text/css" rel="stylesheet">
+    <link  href="../css/index.css" type="text/css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../js/circleProgress.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+</head>
+<body>
+<div class="page_border">
+
+    <!--注册登录界面-->
+     <header class="nav">
+         <a href="javaScript:login()" id="log">log in</a>
+     </header>
+
+    <div class="log_box">
+        <a href="#" class="close">
+            <i class="icon iconfont"
+               style="color:#ffffff;font-size: 10px;background: none;position: relative;left:630px;top: -70px;">
+                &#xe649;</i>
+        </a>
+        <div class="login_box">
+            <ul class="log_tab">
+                <a href="javascript:change_tab(0)" class="tabs tab1" style="background-color: white;border-bottom: 1px solid seagreen">登录</a>
+                <a href="javascript:change_tab(1)" class="tabs tab2">注册</a>
+            </ul>
+            <div class = "tab_contant" style="display: none">
+                <form action="#" method="post">
+                    <input type="text" class="log_account" placeholder="账号">
+                    <input type="password" class="log_psd" placeholder="密码">
+                    <button type="submit" class="button log_button"/>登录</button>
+                </form>
+            </div>
+            <div class = "tab_contant" >
+                <form action="#" method="post">
+                    <input type="text" class="sign_account" placeholder="账号">
+                    <input type="email" class="sign_mail" placeholder="邮箱">
+                    <input type="password" class="sign_psd" placeholder="密码">
+                    <button type="submit" class="button log_button"/>注册</button>
+                </form>
+            </div>
+            <div class = tab1_contant></div>
+        </div>
+    </div>
+
+
+    <!--游客界面-->
+    <!--导航-->
+    <div class="fonts_display">
+        <p class="text-left alpha"><a href="/">HOME</a></p>
+        <p class="text-left"><a href="/work">WORK</a></p>
+        <p class="text-left"><a href="/about">ABOUT</a></p>
+        <p class="logo">
+            <a href="#" >
+                <img src="../img/logo-type@2x.png" alt="Built By" width="120px" height="26px">
+                <img class="logo-img" src="../img/logo-plain@2x.png" width="120px" height="130px">
+            </a>
+        </p>
+        <p class="text-right"><a href="/feed">FEED</a></p>
+        <p class="text-right"><a href="/jobs">JOBS</a></p>
+        <p class="text-right omega"><a href="/contact">CONTACT</a></p>
+        <h1 class="tagline">A higher plain</h1>
+    </div>
+
+    <!--六边形图片展示-->
+    <div class="list-hex-grid" >
+        <!--第一行(lineFirst)-->
+        <div class="lineF">
+            <div class="boxF">
+                <div class="boxS">
+                    <div class="boxT" style="background-color:#16a6b6;background-size: 160px">
+                        <img class="pic1" src="../img/hex-img-1@2x.png" width="160px" height="160px">
+                        <div class="overlay overlay1">
+                            <!--<a href="#">+</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <div class="boxT">
+                        <img class="pic2" src="../img/img_2.jpg" width="200px" height="240px">
+                        <div class="overlay overlay2">
+                            <a href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <div class="boxT" style="background-color: #9b9b9b;">
+                        <img  class="pic3" src="../img/hex-img-2@2x.png" width="120px" height="120px">
+                        <div class="overlay overlay3">
+                            <a href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <div class="boxT" style="background-color: #16a6b6;">
+                        <a href="#" class="inner_a1">
+                        <div class="inner">
+                            <p>WORK</p>
+                            <hr class="grid-1">
+                            <h3>GREENPEACE</h3>
+                        </div>
+                        </a>
+                        <div class="overlay overlay4">
+                            <a href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第二行(lineSecond)-->
+        <div class="lineS">
+            <div class="boxF">
+                <div class="boxS">
+                    <div class="boxT" style="background-color:#9b9b9b">
+                        <a href="#">
+                            <img  class="pic4" src="../img/hex-img-3@2x.png" width="140px" height="90px">
+                        </a>
+                        <!--<div class="overlay overlay21">
+                            <a href="#">+</a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <div class="boxT" style="background-color: #ee6557;">
+                        <a href="#" class="inner_a2">
+                            <div class="inner">
+                                <p>FEED</p>
+                                <hr class="grid-1 center">
+                                <h3>OUR TASTY MORSELS</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <a href="#">
+                        <div class="boxT" style="background-image: url(../img/1524531779.png)"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <a href="#">
+                        <div class="boxT" style="background-image: url(../img/1293684966.jpg)"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <div class="boxT" style="background-color: #ee6557;">
+                        <a href="#" class="inner_a2">
+                          <img class="pic5" src="../img/hex-img-4@2x.png" width="140px" height="170px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第3行(lineThree)-->
+        <div class="lineT">
+            <div class="boxF">
+                <div class="boxS">
+                    <a href="#">
+                        <div class="boxT" style="background-image: url(../img/hex-map.jpg)"> </div>
+                    </a>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <a href="#">
+                        <div class="boxT" style="background-image: url(../img/775037726.jpg)"> </div>
+                    </a>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <div class="boxT" style="background-image: url(../img/hex-mozz.png)">
+                        <a href="#">
+                            <div class="overlay_op">
+                                <img class="pic6" src="../img/hex-img-6@2x.png" width="90px" height="140px">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <a href="#">
+                        <div class="boxT" style="background-image: url(../img/2056121501.png)"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--第4行-->
+        <div class="line4">
+            <div class="boxF">
+                <div class="boxS">
+                    <div class="boxT" style="background-image: url(../img/1993047586.jpg)">
+                        <a href="#">
+                            <div class="overlay_op2">
+                                <div class="inner">
+                                    <p>WORK</p>
+                                    <hr class="grid-1 center">
+                                    <h3>CLEAR<br>
+                                        CHANNEL</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <a href="#">
+                        <div class="boxT" style="background-color: #b3b3b3">
+                            <img class="pic7" src="../img/hex-img-5@2x.png" width="160px" height="90px">
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+            <div class="boxF">
+                <div class="boxS">
+                    <a href="#">
+                        <div class="boxT" style="background-image: url(../img/1691256344.jpg)"></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $(function(){
+            var m_st, m_po = 150; //滚动到150像素时显示
+            $(window).scroll(
+                    function () {
+                        m_st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+                        if (m_st > m_po) {
+                            $('.list-hex-grid').slideDown();
+                        }
+                    })
+
+        });
+    </script>
+
+    <div class="progress">
+        <hr class="grid-2 center">
+        <h2 class="progress_text">A FEW STATS</h2>
+        <div class="circles">
+            <canvas id="circle-progress" width="120" height="120"></canvas>
+            <span class="circle_text1">
+                CURRENT PROJECT CAPACITY
+            </span>
+            <canvas id="circle-progress1" width="120" height="120"></canvas>
+            <span class="circle_text2">
+                AVG. CLIENT REVENUE INCREASE
+            </span>
+            <canvas id="circle-progress2" width="120" height="120"></canvas>
+            <span class="circle_text3">
+                CLIENTS WHO WENT ON TO GET FUNDING
+            </span>
+            <canvas id="circle-progress3" width="120" height="120"></canvas>
+            <span  class="circle_text4">
+                REPEAT CUSTOMERS
+            </span>
+            <canvas id="circle-progress4" width="120" height="120"></canvas>
+            <span  class="circle_text5">
+                NEW BUSINESS FROM REFERRALS
+            </span>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            var m_st;
+            $(window).scroll(
+                    function () {
+                        m_st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+                        if (m_st == 900) {
+                            showMe();
+                        }
+                    })
+
+        });
+        var showMe = function () {
+            circleProgress({
+                id: 'circle-progress',
+                progress:30
+            });
+            circleProgress({
+                id: 'circle-progress1',
+                progress: 70
+            });
+            circleProgress({
+                id: 'circle-progress2',
+                progress: 42
+            });
+            circleProgress({
+                id: 'circle-progress3',
+                progress: 56
+            });
+            circleProgress({
+                id: 'circle-progress4',
+                progress: 66
+            });
+        };
+
+
+    </script>
+
+    <div class="slide" >
+        <hr class="center2">
+        <h2 class="center2_text">HAPPY CLIENTS</h2>
+
+        <ul class="slider-list" style="height: auto;">
+            <li class="slider_content slider1_content"  style="display: block;">
+                <p>
+                    “Buffalo created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd. ”
+                </p>
+                <span class="little_text">Ian McLeod, Trendy Golf</span>
+            </li>
+            <li class="slider_content slider2_content" style="display: none; ">
+                <p>
+                    “Reflecting the values of our organisation, Buffalo has transformed our web and mobile device presence, backed by an efficient and reliable team.”
+                </p>
+                <span  class="little_text">Andy Locke, Open Air Theatre</span>
+
+            </li>
+            <li class="slider_content slider3_content"  style="display: none;">
+                <p>
+                    “We consider Buffalo a world-class design agency and an essential partner for years to come.”
+                </p>
+                <span class="little_text">Alex Kremer, Flextrip</span>
+            </li>
+            <li class="slider_content slider4_content"  style="display: none;">
+                <p>
+                    “Buffalo can always be relied upon.  Excellent work, friendly service and fun to work with!”
+                </p>
+                <span  class="little_text">Ian Aherne, Salon Supplies</span>
+            </li>
+            <li  class="slider_content slider5_content" style="display: none;">
+                <p>
+                    “We're thrilled with the work Buffalo has done creating a website we are truly proud of. We love Jason's innovative design, and have benefitted hugely from Dan's strategic and technical knowledge and advice.
+
+                    In Mozzarella, Buffalo has created a superb and highly intuitive CMS system, meaning the back end works as well as the front looks. ”
+                </p>
+                <span  class="little_text">James Grieve, Bush Theatre</span>
+            </li>
+        </ul>
+        <ul class="slider-markers">
+            <li class="slider1"></li>
+            <li class="slider2"></li>
+            <li class="slider3"></li>
+            <li class="slider4"></li>
+            <li class="slider5"></li>
+        </ul>
+    </div>
+
+    <div class="footer_icon">
+        <ul class="icon_lists">
+
+            <li class="icon_list icon_list1">
+                <a href="#">
+                    <i class="iconfont icon ">&#xe653;</i>
+                    <i class="circ pulse"></i>
+                    <h3 class="title">PROJECT PLANNER</h3>
+                    <p class="colour-body">Interested in working with us? Launch our proposal planner to get started.</p>
+                    <p class="display-inline-block">LAUNCH IT</p>
+                </a>
+            </li>
+
+            <li class="icon_list icon_list2">
+                <a href="#">
+                    <i class="iconfont">&#xe6c2;</i>
+                    <i class="circ pulse"></i>
+                </a>
+                    <h3 style="text-align: center;color: #666666">CONNECT</h3>
+                    <ul class="list-conn">
+                        <li>+44 (0)1273 434 060</li>
+                        <li><a href="mailto:hello@builtbybuffalo.com" class="has-border">hello@builtbybuffalo.com</a></li>
+                        <li><a href="http://twitter.com/builtbybuffalo" class="has-border">Follow us on Twitter</a></li>
+                    </ul>
+
+            </li>
+
+            <li class="icon_list icon_list3">
+              <i class="iconfont">&#xe65c;</i>
+                    <h3 style="text-align: center;color: #666666">NEWSLETTER</h3>
+                    <p style="color: #666666;font-size: 18px">Enter your email address below to receive occasional updates.</p>
+                    <form id="newsletter-signup" action="/newsletter" method="post">
+                        <div class="input-wrap">
+                            <input type="text" name="email" placeholder="Your email address">
+
+                            <button type="submit">
+                                <i class="ss-icon ss-standard"> > </i>
+                            </button>
+                        </div>
+                    </form>
+
+            </li>
+        </ul>
+
+    </div>
+    <footer class="subsection">
+        <p>
+            Copyright © 2006 - 2016
+            <a href="/" class="has-border">Built by Buffalo</a>
+            Limited. All rights reserved.<br>
+            Registered in England Company No. 06048231 VAT Registration No. 899 6307 54
+        </p><br/><br/>
+        <p>
+            <a href="#" class="has-border">Read the boring legal stuff</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>
